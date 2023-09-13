@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  my-mysql:
+    image: mysql:latest
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - '63306:3306'
+    volumes:
+      - my-mysql:/var/lib/mysql
+    networks:
+      - my-network
+  my-redis-stack:
+    image: redis/redis-stack:latest
+    restart: unless-stopped
+    ports:
+      - '6379:6379'
+      - '8001:8001'
+volumes:
+  my-mysql:
+    driver: local
+networks:
+  my-network:
+    driver: bridge
