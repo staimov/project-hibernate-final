@@ -39,3 +39,5 @@ docker run -d --name my-redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:
 ## Result
 
 ![screenshot](./src/main/resources/result.jpg?raw=true)
+
+![screenshot](./src/main/resources/redis.jpg?raw=true)
