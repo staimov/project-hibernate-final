@@ -110,10 +110,8 @@ public class App {
 
             Transaction transaction = session.beginTransaction();
 
-            List<Country> countries = countryDAO.getAll();
-
             int totalCount = cityDAO.getCount();
-            int step = 500;
+            int step = FETCH_STEP;
             for (int i = 0; i < totalCount; i += step) {
                 allCities.addAll(cityDAO.getItems(i, step));
             }
@@ -129,9 +127,11 @@ public class App {
             Transaction transaction = session.beginTransaction();
             for (Integer id : ids) {
                 City city = cityDAO.getById(id);
+                // явно запросим у страны список языков,
+                // чтоб наверняка получить полный объект (без прокси-заглушек)
                 Set<CountryLanguage> languages = city.getCountry().getLanguages();
             }
-            session.getTransaction().commit();
+            transaction.commit();
         }
     }
 
