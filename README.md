@@ -18,7 +18,7 @@ docker pull redis/redis-stack
 
 docker run -d --name my-redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 ```
-or by docker compose command
+or by docker compose command (in the project folder)
 ```
 docker compose up -d
 ```
@@ -39,7 +39,7 @@ docker rm my-redis-stack
 
 docker run -d --name my-redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
 ```
-or by docker compose command
+or by docker compose command (in the project folder)
 ```
 docker compose up --force-recreate --no-deps -d my-redis-stack
 ```
