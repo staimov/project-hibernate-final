@@ -11,7 +11,7 @@ https://javarush.com/quests/lectures/jru.module4.lecture08
 ```
 mvn clean install
 ```
-2. Run docker containers:
+2. Run MySQL and Redis Stack docker containers:
 ```
 docker compose up -d
 ```
