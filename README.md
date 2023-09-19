@@ -1,4 +1,4 @@
-[![My Skills](https://skillicons.dev/icons?i=java,hibernate,mysql,redis,docker&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,maven,hibernate,mysql,redis,docker&theme=light)](https://skillicons.dev)
 # project-hibernate-final
 
 JavaRush hibernate final project:
