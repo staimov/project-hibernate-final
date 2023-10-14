@@ -30,6 +30,14 @@ docker compose up --force-recreate --no-deps -d my-mysql
 
 ## Results
 
-![screenshot](./src/main/resources/result.jpg?raw=true)
+### With p6spy
+
+![screenshot](./src/main/resources/result_w_p6spy.jpg?raw=true)
+
+### Without p6spy
+
+![screenshot](./src/main/resources/result_wo_p6spy.jpg?raw=true)
+
+### Redis
 
 ![screenshot](./src/main/resources/redis.jpg?raw=true)
