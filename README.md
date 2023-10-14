@@ -22,9 +22,10 @@ java -jar target/project-hibernate-final-1.0.jar
 ```
 5. Look at the results in the console.
 6. Open Redis Stack UI http://localhost:8001/ .
-7. Restart the redis container before each restart of the program:
+7. To invalidate cache restart the redis and mysql containers before each restart of the program:
 ```
 docker compose up --force-recreate --no-deps -d my-redis-stack
+docker compose up --force-recreate --no-deps -d my-mysql      
 ```
 
 ## Results
